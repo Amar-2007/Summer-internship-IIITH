@@ -1,0 +1,13 @@
+In terminal
+python -m venv intwork
+source intwork/bin/activate
+pip install -U ultralytics
+Then create file
+touch detectiontask.py
+nano detectiontask.py
+python3 detectiontask.py
+Inside detctiontask.py type this
+from ultralytics import YOLO
+model=YOLO ("yolo26n.pt")
+results=model("https://ultralytics.com/images/bus.jpg")
+results[0].show()
