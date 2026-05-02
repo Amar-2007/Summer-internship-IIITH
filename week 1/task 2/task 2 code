@@ -1,0 +1,2 @@
+ffmpeg -ss 00:00"00 -t 00:01:00 -i output.mp4 -vf fps=30 2frames/frame_%04d.png
+ffmpeg -framerate 30 -i 2frames/frame_%04d.png -c:v libx264 -pix_fmt yuv420p output.mp4
