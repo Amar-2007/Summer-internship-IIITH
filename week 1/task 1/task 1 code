@@ -1,0 +1,5 @@
+To extract images from a video using ffmpeg
+brew install ffmpeg
+mkdir frames
+ffmpeg -i myvideo.mp4 -vf fps=1 frames/frame_%03d.jpg
+open frames
